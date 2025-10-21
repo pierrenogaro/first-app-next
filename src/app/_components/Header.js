@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
         <header className="header">
             <nav className="nav">
                 <div className="logo">Mon Site</div>
                 <ul className="nav-links">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/about">À propos</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link href="/">Accueil</Link></li>
+                    <li><Link href="/about">À propos</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>
         </header>
